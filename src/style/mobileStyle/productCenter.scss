@@ -1,0 +1,45 @@
+@media screen and (max-width: 768px) {
+  .tabs {
+    .title {
+      font-size: 80px;
+      padding: 2% 0;
+    }
+    .desc {
+      padding: 5% 0;
+      font-size: 60px;
+      line-height: 100px;
+    }
+    .tabs-nav {
+      padding: 30px 0;
+      position: relative;
+      &::-webkit-scrollbar {
+        height: 0;
+      }
+      .nav-active {
+        &::before {
+          height: 10px;
+          width: 50%;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -30px;
+        }
+      }
+      .tabs-nav-item {
+        font-size: 18PX;
+        margin-right: 100px;
+        padding-bottom: 70px;
+      }
+    }
+    .tabs-content {
+      margin: 8% auto;
+      grid-template-columns: repeat(1, 1fr);
+      .content-item {
+        height: 310PX;
+        border-radius: 50px;
+        .content-item-text {
+          font-size: 18PX;
+        }
+      }
+    }
+  }
+}

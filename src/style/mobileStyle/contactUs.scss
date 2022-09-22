@@ -1,0 +1,19 @@
+@media screen and (max-width: 768px) {
+  .contact-us {
+    height: auto;
+    .contact-container {
+      height: 160PX;
+      margin-top: 32PX;
+      margin-bottom: 28PX;
+      box-shadow: 0 4px 22px 0 rgba(0, 0, 0, 0.09);
+      .contact-right {
+        .contact-title {
+          font-size: 14PX;
+        }
+        p {
+          font-size: 12PX;
+        }
+      }
+    }
+  }
+}

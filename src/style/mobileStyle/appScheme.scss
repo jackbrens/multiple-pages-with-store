@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  .advantage {
+    height: auto;
+    .advantage-title {
+      font-size: 100px;
+      text-align: left;
+    }
+    .advantage-container {
+      grid-template-columns: repeat(1, 1fr);
+      .advantage-item {
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.11);
+        border-radius: 24px;
+        height: 700px;
+        padding: 60px;
+        margin-bottom: 90px;
+        .advantage-item-title {
+          font-size: 72px;
+          padding-top: 50px;
+          img {
+            width: 80px;
+            height: 80px;
+          }
+        }
+        .advantage-item-desc {
+          padding-top: 60px;
+          padding-left: 80px;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}

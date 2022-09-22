@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  .industryCheck {
+    .industryCheck-title {
+      font-size: 80px;
+    }
+    .industryCheck-container {
+      .industryCheck-item {
+        height: 600px;
+        .industryCheck-item_left {
+          flex: 1;
+        }
+        .industryCheck-item_right {
+          flex: 1;
+          .item_right_title {
+            font-size: 80px;
+            margin-top: 0;
+          }
+          .item_right_desc {
+            font-size: 60px;
+            line-height: 80px;
+            @include text-overflow(3);
+          }
+          .item_right_button {
+            height: 25%;
+            font-size: 56px;
+            border-radius: 16px;
+          }
+        }
+      }
+    }
+  }
+}

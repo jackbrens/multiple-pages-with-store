@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+  .home {
+    .swiper-mask {
+      position: relative;
+      background-image: url('@/assets/swiper/m-swiper1.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      .button-box {
+        font-size: 120px;
+        color: $theme-white;
+        border: 10px solid $theme-white;
+        border-radius: 150px;
+        padding: 30px 180px;
+        position: absolute;
+        bottom: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  :deep(.swiper) {
+    .swiper-pagination {
+      bottom: 10px;
+    }
+    .swiper-pagination-bullet {
+      width: 120px;
+      height: 20px;
+    }
+    .swiper-pagination-bullet-active {
+      background-image: none;
+    }
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      display: none;
+    }
+  }
+
+  .product-center {
+    background-color: $theme-white;
+    height: auto;
+    .product-title {
+      font-size: 20PX;
+    }
+    .product-container {
+      flex-direction: column;
+      .product-item {
+        box-shadow: 0 2PX 8PX 0 rgba(0, 0, 0, 0.14);
+        width: 100%;
+        height: 30vh;
+        border-radius: 8PX;
+        margin-bottom: 10%;
+        background-size: 100% 80%;
+        background-position-y: top;
+        position: relative;
+        &:nth-of-type(4n-2),
+        &:nth-of-type(4n-1) {
+          width: 100%;
+        }
+        &:nth-of-type(2n-1) {
+          margin-right: 0;
+          margin-bottom: 10%;
+        }
+        span {
+          padding-top: 10PX;
+          padding-bottom: 10PX;
+          background-color: $theme-white;
+          color: #2a4290ff;
+          font-size: 100px;
+          & > img {
+            width: 100px;
+            height: 100px;
+            padding-left: 60px;
+            padding-right: 20px;
+          }
+        }
+        .icon {
+          display: block;
+          position: absolute;
+          right: 20PX;
+          bottom: 7%;
+          color: #000000;
+          font-size: 20PX;
+        }
+      }
+    }
+    .product-more {
+      display: none;
+    }
+  }
+  .app-scheme {
+    height: 800px;
+    padding-top: 20PX;
+    .app-title {
+      display: none;
+    }
+  }
+  .blue-sea {
+    display: none;
+  }
+  .partner {
+    display: none;
+  }
+}

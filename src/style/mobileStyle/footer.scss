@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 400PX;
+    .footer-content {
+      display: none;
+    }
+    .m-footer-content {
+      display: block;
+      color: $theme-white;
+      .m-footer-title {
+        padding-top: 42PX;
+        font-size: 20PX;
+        text-align: center;
+      }
+      .m-footer-desc {
+        text-align: center;
+        font-size: 12PX;
+        padding-top: 13PX;
+        padding-bottom: 19PX;
+        color: rgba(255, 255, 255, 0.70);
+      }
+      .m-footer-qrcode {
+        text-align: center;
+        padding-bottom: 28PX;
+        img {
+          width: 150PX;
+          height: 150PX;
+        }
+      }
+    }
+    .m-copy-right {
+      display: block;
+      font-size: 12PX;
+      a {
+        font-size: 12PX;
+      }
+    }
+    .copy-right {
+      display: none;
+    }
+  }
+}
